@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 import SimpleHero from "../components/SimpleHero"
 import { Link } from "gatsby"
 import Banner from "../components/Banner"
+import About from "../components/Home/About"
+import Tips from "../components/Home/Tips"
 
 export default () => (
         <Layout>
@@ -14,5 +16,7 @@ export default () => (
                 <Link to="/places" className="btn-white">explore places</Link>
             </Banner>
         </SimpleHero>
+        <About />
+        <Tips />
         </Layout>
 )
