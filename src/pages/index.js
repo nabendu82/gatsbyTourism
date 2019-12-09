@@ -1,11 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Tips from "../components/Home/Tips"
 import { graphql } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const query = graphql`
 query {
@@ -26,7 +27,7 @@ export default ({ data }) => (
                 title="Awesome Hampi"
                 info="Come and Explore Hampi, the city of ruins, which is a UNESCO World Heritage Site."
             >
-                <Link to="/places" className="btn-white">explore places</Link>
+                <AniLink paintDrip hex="#AEECEE" to="/places" className="btn-white">explore places</AniLink>
             </Banner>
         </StyledHero>
         <About />
