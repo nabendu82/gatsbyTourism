@@ -7,6 +7,7 @@ import About from "../components/Home/About"
 import Tips from "../components/Home/Tips"
 import { graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import FeaturedPlaces from "../components/Home/FeaturedPlaces"
 
 export const query = graphql`
 query {
@@ -32,5 +33,6 @@ export default ({ data }) => (
         </StyledHero>
         <About />
         <Tips />
+        <FeaturedPlaces />
     </Layout>
 )
