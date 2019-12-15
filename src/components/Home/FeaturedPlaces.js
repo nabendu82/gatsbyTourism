@@ -19,7 +19,7 @@ featuredPlaces: allContentfulAmazingHampiData(filter:{featured:{eq:true}}) {
             featured
         images {
             fluid {
-                ...GatsbyContentfulFluid_tracedSVG
+                ...GatsbyContentfulFluid
                 }
             }
         }

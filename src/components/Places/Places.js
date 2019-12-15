@@ -15,7 +15,7 @@ query {
                 entryFees
                 images {
                     fluid {
-                        ...GatsbyContentfulFluid_tracedSVG
+                        ...GatsbyContentfulFluid
                 }
             }
         }

@@ -57,7 +57,7 @@ query($slug: String!){
         }
         images{
             fluid{
-                ...GatsbyContentfulFluid_tracedSVG
+                ...GatsbyContentfulFluid
             }
         }
     }
