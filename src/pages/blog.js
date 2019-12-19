@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from 'gatsby'
+import BlogList from '../components/Blog/BlogList'
 
 export const query = graphql`
 query {
@@ -18,9 +19,8 @@ query {
 export default function blog({ data }) {
     return (
         <Layout>
-            <StyledHero img={data.blogBcg.childImageSharp.fluid}>
-                Blog Page
-            </StyledHero>
+            <StyledHero img={data.blogBcg.childImageSharp.fluid} />
+            <BlogList />
         </Layout>
     )
 }
