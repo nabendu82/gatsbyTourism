@@ -19,6 +19,13 @@ query {
             }
         }
     }
+    photos: allContentfulPhotos {
+        edges{
+            node {
+                slug
+            }
+        }
+    }
 }
 `)
 
@@ -35,6 +42,15 @@ data.places.edges.forEach(({ node }) => {
         createPage({
             path: `blog/${node.slug}`,
             component: path.resolve("./src/templates/blog-template.js"),
+            context: {
+                slug: node.slug,
+            },
+        })
+    })
+    data.photos.edges.forEach(({ node }) => {
+        createPage({
+            path: `photos/${node.slug}`,
+            component: path.resolve("./src/templates/photos-template.js"),
             context: {
                 slug: node.slug,
             },
