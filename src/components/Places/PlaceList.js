@@ -18,7 +18,7 @@ class PlaceList extends Component {
     render() {
         return (
         <section className={styles.tours}>
-            <Title title="our" subtitle="places" />
+            <Title title="hampi" subtitle="places" />
             <div className={styles.center}>
                 {this.state.sortedPlaces && this.state.sortedPlaces.map(({ node }) => {
                     return <Place key={node.contentful_id} place={node} />
