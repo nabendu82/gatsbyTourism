@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Img from "gatsby-image"
+import SEO from "../components/SEO"
 
 const Photos = ({ data }) => {
     const { name, description, images } = data.photo;
@@ -11,6 +12,7 @@ const Photos = ({ data }) => {
 
     return (
         <Layout>
+            <SEO title={name} description={`Royalty free image of ${name}`}/>
             <section className={styles.blog}>
                 <h1 className={styles.center}>{name}</h1>
                 <div className={styles.center}>

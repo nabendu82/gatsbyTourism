@@ -6,6 +6,7 @@ import styles from "../css/template.module.css"
 import Img from "gatsby-image"
 import { FaMoneyBillWave, FaClock, FaTypo3 } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import SEO from "../components/SEO"
 
 const Template = ({ data }) => {
     const { name, timeRequired, timings, entryFees, description: { description }, images } = data.place;
@@ -13,6 +14,7 @@ const Template = ({ data }) => {
 
     return (
         <Layout>
+            <SEO title={name} />
             <StyledHero img={mainImage.fluid} />
             <section className={styles.template}>
                 <div className={styles.center}>
