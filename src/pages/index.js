@@ -8,6 +8,7 @@ import Tips from "../components/Home/Tips"
 import { graphql } from 'gatsby'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import FeaturedPlaces from "../components/Home/FeaturedPlaces"
+import SEO from "../components/SEO"
 
 export const query = graphql`
 query {
@@ -23,6 +24,7 @@ query {
 
 export default ({ data }) => (
     <Layout>
+        <SEO title="Home" />
         <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
             <Banner
                 title="Awesome Hampi"

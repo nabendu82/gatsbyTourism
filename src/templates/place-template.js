@@ -37,7 +37,7 @@ const Template = ({ data }) => {
                         }
                     </div>
                     <p className={styles.desc}>{description}</p>
-                    <AniLink fade to="/places" className="btn-primary">back to tours</AniLink>
+                    <AniLink fade to="/places" className="btn-primary">back to places</AniLink>
                 </div>
             </section>
         </Layout>
