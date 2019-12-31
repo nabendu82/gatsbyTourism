@@ -29,6 +29,7 @@ const PhotoList = () => {
     return (
         <section className={styles.tours}>
             <Title title="hampi" subtitle="photos" />
+            <p className={styles.subText}><span>Royalty free</span> photos of Hampi</p>
             <div className={styles.center}>
                 {photos.edges.map(({ node }) => {
                     return <PhotoCard key={node.id} photo={node} />

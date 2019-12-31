@@ -2,6 +2,15 @@
   padding: 4rem 0;
   text-align: center;
 }
+.sub-text {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 7px;
+}
+.sub-text span{
+  color: var(--primaryColor);
+}
 .center {
   width: 80vw;
   margin: 3rem auto;
