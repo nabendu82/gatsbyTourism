@@ -25,7 +25,7 @@ return (
         })}
         </div>
         <div className={styles.copyright}>
-            copyright &copy; Awesome Hampi {new Date().getFullYear()} all rights reserved
+            copyright &copy; Amazing Hampi {new Date().getFullYear()} all rights reserved
         </div>
     </footer>
 )

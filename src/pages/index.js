@@ -27,7 +27,7 @@ export default ({ data }) => (
         <SEO title="Home" />
         <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
             <Banner
-                title="Awesome Hampi"
+                title="Amazing Hampi"
                 info="Come and Explore Hampi, the city of ruins, which is a UNESCO World Heritage Site."
             >
                 <AniLink paintDrip hex="#AEECEE" to="/places" className="btn-white">explore places</AniLink>
