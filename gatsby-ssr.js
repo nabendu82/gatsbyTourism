@@ -16,7 +16,7 @@ exports.onRenderBody = function({ setHeadComponents, setPreBodyComponents }) {
     ]);
 
     setPreBodyComponents([
-            <div id="255758264">
+            <div style={{maxWidth: '54vw', margin: '0 auto'}} id="255758264">
                 <script
                     dangerouslySetInnerHTML={{
                         __html:`
