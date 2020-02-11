@@ -1,36 +1,20 @@
 const React = require("react");
 
-exports.onRenderBody = function({ setHeadComponents, setPreBodyComponents }) {
+exports.onRenderBody = function({ setHeadComponents, setPostBodyComponents }) {
 
     setHeadComponents([
-        <script
-        dangerouslySetInnerHTML={{
-            __html:`
-            window._mNHandle = window._mNHandle || {};
-            window._mNHandle.queue = window._mNHandle.queue || [];
-            medianet_versionId = "3121199";
-            `
-        }}
-    />,
-    <script src="//contextual.media.net/dmedianet.js?cid=8CUVUWCU4" async="async" />
+
     ]);
 
-    setPreBodyComponents([
-            <div style={{maxWidth: '54vw', margin: '0 auto'}} id="255758264">
+    setPostBodyComponents([
                 <script
                     dangerouslySetInnerHTML={{
                         __html:`
-                        try {
-                            window._mNHandle.queue.push(function (){
-                                window._mNDetails.loadTag("255758264", "728x90", "255758264");
-                            });
-                        }
-                        catch (error) {}
+                        var infolinks_pid = 3233958;
+                        var infolinks_wsid = 1;
                         `
                     }}
-                />
-            </div>
+                />,
+                <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
     ]);
-
-
 };
